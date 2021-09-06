@@ -1,4 +1,4 @@
-## Elina Nepomniashchaia
+# Elina Nepomniashchaia
 
 ### Contact information:
 
@@ -26,7 +26,7 @@ Concluding all the above, I think I have enough soft skills that will compensate
 *   Adobe Photoshop, Adobe Illustrator, Adobe XD
 
 ---
-### Education:
+### Courses and qualification:
 
 *   [Web Design: Strategy and Information Architecture](http://https://www.coursera.org/account/accomplishments/certificate/8VVTEMEBPBJL)
 *   [Fundamentals of Graphic Design](https://https://www.coursera.org/account/accomplishments/certificate/LYQ58HPK6XHG)
