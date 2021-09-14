@@ -1,2 +1,3 @@
 # rsschool-cv
-https://github.com/Elina-nep/rsschool-cv/cv
+https://github.com/Elina-nep/rsschool-cv/
+https://elina-nep.github.io/rsschool-cv/
