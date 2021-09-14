@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +46,7 @@
             margin: 0 auto;
             width: 1024px;
             color: white;
-           
+
         }
 
         .two-columns {
@@ -115,7 +116,7 @@
             color: white;
             margin: 0px 0px 0px -65px;
             padding: 20px;
-            
+
         }
 
         .code {
@@ -178,7 +179,7 @@
                 <div class="div-top-left">
 
                     <div class="div-about-me">
-                        <img src="pictures/myself.svg" alt="my photo" height="300px" width="300px"
+                        <img src="pictures/myself.svg" alt="my photo" height="300" width="300"
                             style="position: absolute; top: -180px; left: 40px;">
                         <header>
                             <h1>Elina Nepomniashchaia</h1>
@@ -200,22 +201,20 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="div-contacts">
-                    <span style="display: flex">
-                        <p><img src="pictures/my_phone.svg" alt="telephone icon" class="contact-logo">
-                            +7 921 344 58 19</p>
-                    </span>
-                    <span style="display: flex">
-                        <p> <img src="pictures/my_mail.svg" alt="mail icon" class="contact-logo">
-                            elina.nep@gmail.com</p>
-                    </span>
-                    <span style="display: flex">
-                        <p> <img src="pictures/my_telega.svg" alt="telegram icon" class="contact-logo">
-                            @Elinch</p>
-                    </span>
-                    <span style="display: flex">
-                        <p><img src="pictures/my_linkedin.svg" alt="linkedin icon" class="contact-logo">
-                            LinkedIn</p>
-                    </span>
+
+                    <p style="display: flex"> <img src="pictures/my_phone.svg" alt="telephone icon"
+                            class="contact-logo">
+                        +7 921 344 58 19</p>
+
+                    <p style="display: flex"> <img src="pictures/my_mail.svg" alt="mail icon" class="contact-logo">
+                        elina.nep@gmail.com</p>
+                    <p style="display: flex"> <img src="pictures/my_telega.svg" alt="telegram icon"
+                            class="contact-logo">
+                        @Elinch</p>
+                    <p style="display: flex"><img src="pictures/my_linkedin.svg" alt="linkedin icon"
+                            class="contact-logo">
+                        LinkedIn</p>
+
                 </div>
 
             </div>
@@ -232,8 +231,8 @@
                                 class="skills-logo">JavaScript Basics</p>
                         <p style="display: flex"><img src="pictures/my_git.svg" alt="git logo" class="skills-logo">Git
                         </p>
-                        <p style="display: flex"><img src="pictures/my_github_small.svg" alt="github logo"
-                                class="skills-logo">GitHub</p>
+                        <p style="display: flex"><img src="pictures/my_github_small.svg" alt="vs code logo"
+                                class="skills-logo">VS Code</p>
                         <p style="display: flex"><img src="pictures/my_adobe.svg" alt="adobe logo"
                                 class="skills-logo">Adobe Photoshop, Illustrator, XD</p>
 
@@ -289,7 +288,7 @@
 
         <div class="code">
             <h2>Code examples</h2>
-            <hr style = "width: 100%;">
+            <hr style="width: 100%;">
             <pre>
             <code>
 const MODERN_ACTIVITY = 15;
@@ -300,7 +299,7 @@ export default function dateSample(sampleActivitySTR) {
     if (typeof sampleActivitySTR == "string") {
         let sampleActivity = Number(sampleActivitySTR);
         if ((Number.isInteger(sampleActivity) || isFloat(sampleActivity)) && 
-        ((sampleActivity <= MODERN_ACTIVITY) && (sampleActivity > 0))) {
+        ((sampleActivity &lt;= MODERN_ACTIVITY) && (sampleActivity > 0))) {
             let k = 0.693 / HALF_LIFE_PERIOD;
             let timeLife = Math.ceil((Math.log(MODERN_ACTIVITY/sampleActivity))/k);
             return timeLife; }
@@ -310,16 +309,16 @@ export default function dateSample(sampleActivitySTR) {
         </div>
 
 
-   
+
         <footer>
             <a href="https://github.com/Elina-nep" style="display: flex">
-                <img src="pictures/my_github.svg" alt="github icon" width="50px" height="50px"
+                <img src="pictures/my_github.svg" alt="github icon" width="50" height="50"
                     style="margin-right: 6px; vertical-align: middle;">
                 <p>my GitHub</p>
             </a>
             <p>© 2021</p>
-            <a href="https://rs.school/js/"> <img src="pictures/my_rs_school_js.svg" alt="RS school logo" width="150px" height="50px"
-                style="margin: 6px;"></a>
+            <a href="https://rs.school/js/"> <img src="pictures/my_rs_school_js.svg" alt="RS school logo" width="150"
+                    height="50" style="margin: 6px;"></a>
         </footer>
         <div class="clearfix"></div>
     </div>
