@@ -12,10 +12,12 @@ body {
 /*Headers*/
 
 h1 {
+    font-family: 'Homemade Apple', cursive;
     color: #437F56;
     text-align: center;
     font-size: 200%;
     margin: 10px;
+    display: swap;
 }
 
 h2 {
@@ -188,4 +190,26 @@ li {
     color: #437F56;
     text-align: center;
     margin: 10px;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+    .header-left {
+        width: 100%;
+    }
+    .header-right {
+        width: 100%;
+    }
+    main {
+        flex-direction: column;
+    }
+    .main-left {
+        width: 100%;
+        padding-left: 40px;
+    }
+    .main-right {
+        width: 100%;
+    }
 }
