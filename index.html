@@ -18,10 +18,31 @@
     <script>
         hljs.initHighlightingOnLoad();
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="menu.js"></script>
 </head>
 
 <body>
     <div class="div-main-part">
+        <menu>
+            <div class="container">
+                <div class="menu-body">
+
+                    <nav class="menu-nav">
+                        <ul class="menu-list">
+                            <li> <a href="#about" class="scroll-to">About Me</a></li>
+                            <li><a href="#skills" class="scroll-to">Skills and Proficiency</a></li>
+                            <li><a href="#courses" class="scroll-to">Courses and Qualification</a></li>
+                            <li><a href="#code" class="scroll-to">Code Example</a></li>
+                        </ul>
+                    </nav>
+                    <div class="burger">
+
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </menu>
         <header>
             <div class="header-left">
                 <figure>
@@ -111,7 +132,8 @@
                 </section>
 
                 <section class="main-info-section">
-                    <h2>Courses and qualification</h2>
+                    <h2>
+                        <a id="courses"></a>Courses and Qualification</h2>
                     <ul>
                         <li style="display: flex"><img src="pictures/my_coursera.svg" alt="coursera logo" class="skills-logo"><a href="https://www.coursera.org/account/accomplishments/certificate/8VVTEMEBPBJL">Web
                     Design</a></li>
@@ -134,7 +156,8 @@
 
 
         <div class="code">
-            <h2>Code Example</h2>
+            <h2>
+                <a id="code"></a>Code Example</h2>
             <hr style="width: 100%;">
             <pre>
             <code class="language-js">
