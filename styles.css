@@ -10,7 +10,7 @@
         }
         /*menu*/
         
-        menu {
+        .menu {
             position: fixed;
             color: #ffffff;
             z-index: 50;
@@ -20,7 +20,7 @@
             margin: 0px;
         }
         
-        menu::before {
+        .menu::before {
             content: '';
             position: absolute;
             top: 0;
@@ -142,7 +142,6 @@
             text-align: center;
             font-size: 200%;
             margin: 10px;
-            display: swap;
         }
         
         h2 {
