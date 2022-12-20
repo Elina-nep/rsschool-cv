@@ -2,183 +2,207 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8" />
-   
-    <title>CV of Elina Nepomniashchaia</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/monokai-sublime.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-    <script>
-        hljs.initHighlightingOnLoad();
-    </script>
-    
-    <script src="menu.js"></script>
+  <title>CV of Elina Karseeva</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/firefly.css">
+  <link rel="stylesheet" href="styles/menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/monokai-sublime.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
-    <div class="div-main-part">
+<body class="body">
+
+  <canvas id="fishtank"></canvas>
+  <div id="firefly"></div>
+
+
+  <div class="menu">
+
+    <div class="menu-body">
+
+      <div class="menu-nav" id="menu-nav-id">
+        <ul class="menu-list">
+          <li> <a href="#about" class="scroll-to">About Me</a></li>
+          <li><a href="#skills" class="scroll-to">Skills and Proficiency</a></li>
+          <li><a href="#courses" class="scroll-to">Courses and Qualification</a></li>
+          <li><a href="#video" class="scroll-to">Video Intervew</a></li>
+          <li><a href="#code" class="scroll-to">Code Example</a></li>
+        </ul>
+      </div>
+      <div class="burger" id="burger-id">
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <header class="header flex">
+    <div class="header-left">
+    </div>
+    <div class="header-right">
+      <div class="header-right-container flex">
+        <h1>Elina Karseeva</h1>
+        <p class="personal">30 years / Saint Petersburg</p>
+        <h3>Junior Frontend Developer</h3>
+        <p>Some text here</p>
+        <p>dive right in</p>
+      </div>
+    </div>
+
+  </header>
+
+
+
+  <main class="wrapper main">
+
+    <section class="main-info-section flex">
+
+      <div class="main-info-section--left">
+        <a id="about"></a>
+        <h2>
+          About Me
+        </h2>
+
+        <p>I have a Phd in technical science for developing of a laser sensor for blood disease diagnostics. I am good at physics and mathematics, worked with data processing algorithms.</p>
+        <p>During this work I gained some organizational and leading skills too. My team received a government grant for medical optical sensor development. I was a local organizer of international conferences.</p>
+        <p>So I can learn fast enough and always go for my goals with great enthusiasm, which usually helps me to gain success.</p>
+      </div>
+      <div class="main-info-section--right">
+
+        <img src="/pictures/me.png" alt="myself" class="my-photo">
+        <div id="speech-bubble">Hi! ;)</div>
+      </div>
+    </section>
+
+
+
+    <!-- <div class="main-left">
+      <aside>
+        <section class="contacts-section">
+          <h2 class="h2-aside">Contacts</h2>
+          <ul>
+            <li style="display: flex"> <img src="pictures/my_phone.svg" alt="telephone icon" class="contact-logo"> +7 921 344 58 19</li>
+
+            <li style="display: flex"> <img src="pictures/my_mail.svg" alt="mail icon" class="contact-logo"> elina.nep@gmail.com
+            </li>
+            <li style="display: flex"> <img src="pictures/my_telega.svg" alt="telegram icon" class="contact-logo"> @Elinch
+            </li>
+            <li style="display: flex"><img src="pictures/my_linkedin.svg" alt="linkedin icon" class="contact-logo"> LinkedIn
+            </li>
+          </ul>
+        </section>
+
        
-        <div class="menu">
-            <div class="container">
-                <div class="menu-body">
-
-                    <div class="menu-nav" id="menu-nav-id">
-                        <ul class="menu-list">
-                            <li> <a href="#about" class="scroll-to">About Me</a></li>
-                            <li><a href="#skills" class="scroll-to">Skills and Proficiency</a></li>
-                            <li><a href="#courses" class="scroll-to">Courses and Qualification</a></li>
-                            <li><a href="#video" class="scroll-to">Video Intervew</a></li>
-                            <li><a href="#code" class="scroll-to">Code Example</a></li>
-                        </ul>
-                    </div>
-                    <div class="burger" id="burger-id">
-
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <header>
-            <div class="header-left">
-                <figure>
-                    <img src="pictures/myself.svg" alt="my photo" height="300" width="300">
-                </figure>
-            </div>
-            <div class="header-right">
-                <h1>Elina Nepomniashchaia</h1>
-                <p class="personal">29 years / Saint Petersburg</p>
-                <h3>Junior Frontend Developer</h3>
-
-            </div>
-        </header>
-        <main>
-            <div class="main-left">
-                <aside>
-                    <section class="contacts-section">
-                        <h2 class="h2-aside">Contacts</h2>
-                        <ul>
-                            <li style="display: flex"> <img src="pictures/my_phone.svg" alt="telephone icon" class="contact-logo"> +7 921 344 58 19</li>
-
-                            <li style="display: flex"> <img src="pictures/my_mail.svg" alt="mail icon" class="contact-logo"> elina.nep@gmail.com
-                            </li>
-                            <li style="display: flex"> <img src="pictures/my_telega.svg" alt="telegram icon" class="contact-logo"> @Elinch
-                            </li>
-                            <li style="display: flex"><img src="pictures/my_linkedin.svg" alt="linkedin icon" class="contact-logo"> LinkedIn
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section class="contacts-section">
-                        <h2 class="h2-aside">Languages</h2>
-                        <ul>
-                            <li style="display: flex"><img src="pictures/b2.svg" alt="B2 logo" class="lang-logo">English - Upper-intermediate
-                                <!-- (according to the <a href="https://www.efset.org/quick-check">EF online test</a>) -->
-                            </li>
-                            <li style="display: flex"><img src="pictures/c2.svg" alt="C2 logo" class="lang-logo">Russian - Native
-                            </li>
-                            <li style="display: flex"><img src="pictures/a1.svg" alt="A1 logo" class="lang-logo">Italian - Basic
-                            </li>
-                        </ul>
-                    </section>
 
 
-                    <section class="contacts-section">
-                        <h2 class="h2-aside">Education and Experience</h2>
-                        <ul>
-                            <li style="display: flex"><img src="pictures/2015.svg" alt="2015 logo" class="skills-logo">Peter the Great St. Petersburg Polytechnic University, Master degree in quantum physics</li>
-                            <li style="display: flex"><img src="pictures/2019.svg" alt="2019 logo" class="skills-logo">PhD in technical science</li>
-                            <li style="display: flex"><img src="pictures/2021.svg" alt="2021 logo" class="skills-logo">Russian Science Foundation grant supervisor</li>
-                        </ul>
-                         
-                    </section>
-                </aside>
-            </div>
+       
+      </aside>
+    </div> -->
 
-            <div class="main-right">
-                
+    <div class="flex">
 
-                <section class="main-info-section">
-                    <a id="about"></a>
-                    <h2>
-                       
-                        About Me
-                    </h2>
+      <div class="main-left">
 
-                    <p>I have a Phd in technical science for developing of a laser sensor for blood disease diagnostics. I am good at physics and mathematics, worked with data processing algorithms.</p>
-                    <p>During this work I gained some organizational and leading skills too. My team received a government grant for medical optical sensor development. I was a local organizer of international conferences.</p>
-                    <p>So I can learn fast enough and always go for my goals with great enthusiasm, which usually helps me to gain success.</p>
-                   
-                </section>
+        <section class="contacts-section">
+          <a id="skills"></a>
+          <h2>
 
+            Skills and Proficiency
+          </h2>
+          <ul>
+            <li style="display: flex"><img src="pictures/my_html.svg" alt="html logo" class="skills-logo"> HTML5
+            </li>
+            <li style="display: flex"><img src="pictures/my_css.svg" alt="css logo" class="skills-logo">CSS3
+            </li>
+            <li style="display: flex"><img src="pictures/my_js.svg" alt="js logo" class="skills-logo">JavaScript Basics
+            </li>
+            <li style="display: flex"><img src="pictures/my_git.svg" alt="git logo" class="skills-logo">Git
+            </li>
+            <li style="display: flex"><img src="pictures/my_github_small.svg" alt="vs code logo" class="skills-logo">VS Code</li>
+            <li style="display: flex"><img src="pictures/my_adobe.svg" alt="adobe logo" class="skills-logo">Adobe Photoshop, Illustrator, XD</li>
+          </ul>
 
-                <section class="main-info-section">
-                    <a id="skills"></a>
-                    <h2>
-                       
-                        Skills and Proficiency
-                    </h2>
-                    <ul>
-                        <li style="display: flex"><img src="pictures/my_html.svg" alt="html logo" class="skills-logo"> HTML5
-                        </li>
-                        <li style="display: flex"><img src="pictures/my_css.svg" alt="css logo" class="skills-logo">CSS3
-                        </li>
-                        <li style="display: flex"><img src="pictures/my_js.svg" alt="js logo" class="skills-logo">JavaScript Basics
-                        </li>
-                        <li style="display: flex"><img src="pictures/my_git.svg" alt="git logo" class="skills-logo">Git
-                        </li>
-                        <li style="display: flex"><img src="pictures/my_github_small.svg" alt="vs code logo" class="skills-logo">VS Code</li>
-                        <li style="display: flex"><img src="pictures/my_adobe.svg" alt="adobe logo" class="skills-logo">Adobe Photoshop, Illustrator, XD</li>
-                    </ul>
-                   
-                </section>
+        </section>
 
-                <section class="main-info-section">
-                    <a id="courses">
-                    <h2>
-                       </a>Courses and Qualification</h2>
-                    <ul>
-                        <li style="display: flex"><img src="pictures/my_coursera.svg" alt="coursera logo" class="skills-logo"><a href="https://www.coursera.org/account/accomplishments/certificate/8VVTEMEBPBJL">Web
-                    Design</a></li>
-                        <li style="display: flex"><img src="pictures/my_coursera.svg" alt="coursera logo" class="skills-logo"><a href="https://www.coursera.org/account/accomplishments/certificate/LYQ58HPK6XHG">Fundamentals
-                    of Graphic Design</a></li>
-                        <li style="display: flex"><img src="pictures/my_coursera.svg" alt="coursera logo" class="skills-logo"><a href="https://www.coursera.org/account/accomplishments/certificate/7SM3CZJ3JG2D">UX
-                    Design Fundamentals</a></li>
-                        <li style="display: flex"><img src="pictures/my_coursera.svg" alt="coursera logo" class="skills-logo"><a href="https://www.coursera.org/account/accomplishments/certificate/XAN4ZS9K8296">Visual
-                    Elements of User Interface Design</a></li>
-                        <li style="display: flex"><img src="pictures/my_coursera.svg" alt="coursera logo" class="skills-logo">Academic English: Writing</li>
-                        <li style="display: flex"><img src="pictures/my_stepik.svg" alt="stepik logo" class="skills-logo"> <a href="https://stepik.org/cert/1080395">JavaScript</a></li>
-                    </ul>
-                    
-                </section>
-                <section class="main-info-section">
-                    <a id="video"></a>
-                    <h2>Video</h2>
-                        
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/cktKrBufH0g" title="YouTube video player" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border: 0px;"></iframe>
-                </section>
-            </div>
-            
+        <section class="contacts-section">
+          <h2 class="h2-aside">Languages</h2>
+          <ul>
+            <li style="display: flex"><img src="pictures/b2.svg" alt="B2 logo" class="lang-logo">English - Upper-intermediate
+            </li>
+            <li style="display: flex"><img src="pictures/c2.svg" alt="C2 logo" class="lang-logo">Russian - Native
+            </li>
+            <li style="display: flex"><img src="pictures/a1.svg" alt="A1 logo" class="lang-logo">Italian - Basic
+            </li>
+          </ul>
+        </section>
 
-        </main>
+      </div>
+      <div class="main-right">
 
-
-
-
-        <div class="code">
-            <a id="code"></a>
+        <section class="main-info-section">
+          <a id="courses">
             <h2>
-                Code Example</h2>
-            <hr style="width: 100%;">
-            <pre>
+          </a>Courses and Qualification</h2>
+          <ul>
+            <li style="display: flex"><img src="pictures/my_coursera.svg" alt="coursera logo" class="skills-logo"><a href="https://www.coursera.org/account/accomplishments/certificate/8VVTEMEBPBJL">Web
+                    Design</a></li>
+            <li style="display: flex"><img src="pictures/my_coursera.svg" alt="coursera logo" class="skills-logo"><a href="https://www.coursera.org/account/accomplishments/certificate/LYQ58HPK6XHG">Fundamentals
+                    of Graphic Design</a></li>
+            <li style="display: flex"><img src="pictures/my_coursera.svg" alt="coursera logo" class="skills-logo"><a href="https://www.coursera.org/account/accomplishments/certificate/7SM3CZJ3JG2D">UX
+                    Design Fundamentals</a></li>
+            <li style="display: flex"><img src="pictures/my_coursera.svg" alt="coursera logo" class="skills-logo"><a href="https://www.coursera.org/account/accomplishments/certificate/XAN4ZS9K8296">Visual
+                    Elements of User Interface Design</a></li>
+            <li style="display: flex"><img src="pictures/my_coursera.svg" alt="coursera logo" class="skills-logo">Academic English: Writing</li>
+            <li style="display: flex"><img src="pictures/my_stepik.svg" alt="stepik logo" class="skills-logo"> <a href="https://stepik.org/cert/1080395">JavaScript</a></li>
+          </ul>
+
+        </section>
+
+        <section class="main-info-section">
+          <h2 class="h2-aside">Education and Experience</h2>
+          <ul>
+            <li style="display: flex"><img src="pictures/2015.svg" alt="2015 logo" class="skills-logo">Peter the Great St. Petersburg Polytechnic University, Master degree in quantum physics</li>
+            <li style="display: flex"><img src="pictures/2019.svg" alt="2019 logo" class="skills-logo">PhD in technical science</li>
+            <li style="display: flex"><img src="pictures/2021.svg" alt="2021 logo" class="skills-logo">Russian Science Foundation grant supervisor</li>
+          </ul>
+
+        </section>
+
+      </div>
+    </div>
+
+
+    <section class="main-info-section">
+      <a id="video"></a>
+      <h2>Video</h2>
+
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/cktKrBufH0g" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border: 0px;"></iframe>
+    </section>
+
+
+
+  </main>
+
+
+
+
+  <div class="code">
+    <a id="code"></a>
+    <h2>
+      Code Example</h2>
+    <hr style="width: 100%;">
+    <pre>
             <code class="language-js">
 const MODERN_ACTIVITY = 15;
 const HALF_LIFE_PERIOD = 5730;
@@ -195,21 +219,30 @@ export default function dateSample(sampleActivitySTR) {
         else return false; }
     else return false; }
     </code></pre>
-        </div>
+  </div>
 
 
 
-        <footer>
-            <a href="https://github.com/Elina-nep" style="display: flex">
-                <img src="pictures/my_github.svg" alt="github icon" width="50" height="50" style="margin-right: 6px; vertical-align: middle;">
-                <p>my GitHub</p>
-            </a>
-            <p>© 2021</p>
-            <a href="https://rs.school/js/"> <img src="pictures/my_rs_school_js.svg" alt="RS school logo" width="150" height="50" style="margin: 6px;"></a>
-        </footer>
-        <div class="clearfix"></div>
-    </div>
+  <footer>
+    <a href="https://github.com/Elina-nep" style="display: flex">
+      <img src="pictures/my_github.svg" alt="github icon" width="50" height="50" style="margin-right: 6px; vertical-align: middle;">
+      <p>my GitHub</p>
+    </a>
+    <p>© 2022</p>
+    <a href="https://rs.school/js/"> <img src="pictures/my_rs_school_js.svg" alt="RS school logo" width="150" height="50" style="margin: 6px;"></a>
+  </footer>
+  <div class="clearfix"></div>
+  </div>
 
 </body>
+
+
+<script src="menu.js"></script>
+<script src="fishtank.js"></script>
+<script src="firefly.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
 
 </html>

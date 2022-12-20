@@ -1,0 +1,177 @@
+#firefly {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.firefly {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 0.2vw;
+  height: 0.2vw;
+  margin: -0.2vw 0 0 9.8vw;
+  animation: ease 200s alternate infinite;
+  pointer-events: none;
+}
+
+.firefly::before,
+.firefly::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform-origin: -10vw;
+}
+.firefly::before {
+  background: rgb(13, 2, 86, 0.5);
+  opacity: 0.4;
+  animation: drift ease alternate infinite;
+}
+.firefly::after {
+  background: white;
+  opacity: 0;
+  box-shadow: 0 0 0vw 0vw rgb(154, 235, 255);
+  animation: drift ease alternate infinite, flash ease infinite;
+}
+
+@keyframes drift {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flash {
+  0%,
+  30%,
+  100% {
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw rgb(185, 239, 245);
+  }
+  5% {
+    opacity: 1;
+    box-shadow: 0 0 2vw 0.4vw rgb(204, 244, 254);
+  }
+}
+
+.firefly:nth-child(1)::before {
+  animation-duration: 20s;
+}
+.firefly:nth-child(1)::after {
+  animation-duration: 20s, 7576ms;
+  animation-delay: 0ms, 7193ms;
+}
+.firefly:nth-child(2)::before {
+  animation-duration: 18s;
+}
+.firefly:nth-child(2)::after {
+  animation-duration: 18s, 5986ms;
+  animation-delay: 0ms, 2931ms;
+}
+
+.firefly:nth-child(3)::before {
+  animation-duration: 9s;
+}
+.firefly:nth-child(3)::after {
+  animation-duration: 9s, 8346ms;
+  animation-delay: 0ms, 3764ms;
+}
+.firefly:nth-child(4)::before {
+  animation-duration: 8s;
+}
+.firefly:nth-child(4)::after {
+  animation-duration: 8s, 6279ms;
+  animation-delay: 0ms, 4085ms;
+}
+.firefly:nth-child(5)::before {
+  animation-duration: 9s;
+}
+.firefly:nth-child(5)::after {
+  animation-duration: 9s, 9110ms;
+  animation-delay: 0ms, 2685ms;
+}
+.firefly:nth-child(6)::before {
+  animation-duration: 14s;
+}
+.firefly:nth-child(6)::after {
+  animation-duration: 14s, 10226ms;
+  animation-delay: 0ms, 3445ms;
+}
+
+.firefly:nth-child(7)::before {
+  animation-duration: 10s;
+}
+.firefly:nth-child(7)::after {
+  animation-duration: 19s, 9248ms;
+  animation-delay: 0ms, 2535ms;
+}
+
+.firefly:nth-child(8)::before {
+  animation-duration: 17s;
+}
+.firefly:nth-child(8)::after {
+  animation-duration: 17s, 10589ms;
+  animation-delay: 0ms, 7064ms;
+}
+.firefly:nth-child(9)::before {
+  animation-duration: 9s;
+}
+.firefly:nth-child(9)::after {
+  animation-duration: 9s, 9541ms;
+  animation-delay: 0ms, 5737ms;
+}
+
+.firefly:nth-child(10)::before {
+  animation-duration: 11s;
+}
+.firefly:nth-child(10)::after {
+  animation-duration: 11s, 9330ms;
+  animation-delay: 0ms, 1509ms;
+}
+.firefly:nth-child(11)::before {
+  animation-duration: 15s;
+}
+.firefly:nth-child(11)::after {
+  animation-duration: 15s, 6164ms;
+  animation-delay: 0ms, 2360ms;
+}
+
+.firefly:nth-child(12)::before {
+  animation-duration: 12s;
+}
+.firefly:nth-child(12)::after {
+  animation-duration: 12s, 10532ms;
+  animation-delay: 0ms, 5277ms;
+}
+
+.firefly:nth-child(13)::before {
+  animation-duration: 9s;
+}
+.firefly:nth-child(13)::after {
+  animation-duration: 9s, 7634ms;
+  animation-delay: 0ms, 6924ms;
+}
+
+.firefly:nth-child(14)::before {
+  animation-duration: 10s;
+}
+.firefly:nth-child(14)::after {
+  animation-duration: 10s, 9685ms;
+  animation-delay: 0ms, 6261ms;
+}
+
+.firefly:nth-child(15)::before {
+  animation-duration: 16s;
+}
+.firefly:nth-child(15)::after {
+  animation-duration: 16s, 9767ms;
+  animation-delay: 0ms, 5092ms;
+}
